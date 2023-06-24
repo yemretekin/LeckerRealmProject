@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tm9-Cl-3Qn">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lecker Collection View Controller-->
+        <scene sceneID="JvB-F3-5vS">
+            <objects>
+                <collectionViewController id="wOD-a2-3tq" customClass="LeckerCollectionViewController" customModule="LeckerRealmProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="NpR-fl-7LM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TZd-rx-47z">
+                            <size key="itemSize" width="393" height="290"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LeckerCell" id="f7h-vp-aBC" customClass="LeckerCollectionViewCell" customModule="LeckerRealmProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="u6r-o1-2DR">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="290"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HbN-pQ-pL7">
+                                            <rect key="frame" x="8" y="8" width="377" height="195"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="195" id="5wL-tr-McY"/>
+                                                <constraint firstAttribute="width" constant="377" id="ghb-YT-9SK"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n74-1r-qR0">
+                                            <rect key="frame" x="8" y="232" width="377" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="HbN-pQ-pL7" firstAttribute="trailing" secondItem="u6r-o1-2DR" secondAttribute="trailingMargin" id="2oH-pQ-T8d"/>
+                                        <constraint firstItem="HbN-pQ-pL7" firstAttribute="top" secondItem="u6r-o1-2DR" secondAttribute="topMargin" id="7tE-Zk-Bkc"/>
+                                        <constraint firstItem="n74-1r-qR0" firstAttribute="top" secondItem="HbN-pQ-pL7" secondAttribute="bottom" constant="29" id="BEx-dV-s6e"/>
+                                        <constraint firstItem="HbN-pQ-pL7" firstAttribute="leading" secondItem="u6r-o1-2DR" secondAttribute="leadingMargin" id="IeV-LE-G6m"/>
+                                        <constraint firstItem="n74-1r-qR0" firstAttribute="bottom" secondItem="u6r-o1-2DR" secondAttribute="bottomMargin" id="VOr-zH-RC2"/>
+                                        <constraint firstItem="HbN-pQ-pL7" firstAttribute="leading" secondItem="n74-1r-qR0" secondAttribute="leading" id="mo3-UQ-Wc9"/>
+                                        <constraint firstItem="HbN-pQ-pL7" firstAttribute="trailing" secondItem="n74-1r-qR0" secondAttribute="trailing" id="rIK-OC-ee3"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="393" height="290"/>
+                                <connections>
+                                    <outlet property="flowerImageView" destination="HbN-pQ-pL7" id="iyX-gG-fVQ"/>
+                                    <outlet property="flowerNameLabel" destination="n74-1r-qR0" id="zkM-3h-TiI"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="wOD-a2-3tq" id="M3h-PP-fHA"/>
+                            <outlet property="delegate" destination="wOD-a2-3tq" id="OUP-id-gof"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="x7m-44-UPf"/>
+                    <connections>
+                        <segue destination="IYW-k6-Ltr" kind="show" identifier="toAddVC" id="yJD-MK-Fbo"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EYk-31-qPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="-14.084507042253522"/>
+        </scene>
+        <!--Add Lecker View Controller-->
+        <scene sceneID="Uto-QT-YHJ">
+            <objects>
+                <viewController id="IYW-k6-Ltr" customClass="AddLeckerViewController" customModule="LeckerRealmProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ffh-m2-Si0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="w60-ly-ywC">
+                                <rect key="frame" x="16" y="102.99999999999999" width="361" height="219.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="2WO-dh-VSd"/>
+                                    <constraint firstAttribute="width" constant="361" id="hTM-Xo-CXg"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eCR-gz-gBk">
+                                <rect key="frame" x="16" y="409" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vx5-7c-yf4">
+                                <rect key="frame" x="16" y="537" width="361" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="SAVE"/>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="IYW-k6-Ltr" eventType="touchUpInside" id="cPC-1E-IO5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S1O-Pm-zTO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="w60-ly-ywC" firstAttribute="leading" secondItem="eCR-gz-gBk" secondAttribute="leading" id="7Dl-Mz-bQA"/>
+                            <constraint firstItem="vx5-7c-yf4" firstAttribute="trailing" secondItem="eCR-gz-gBk" secondAttribute="trailing" id="FLh-tg-qqx"/>
+                            <constraint firstItem="w60-ly-ywC" firstAttribute="trailing" secondItem="eCR-gz-gBk" secondAttribute="trailing" id="Lnc-k9-6GQ"/>
+                            <constraint firstItem="eCR-gz-gBk" firstAttribute="top" secondItem="w60-ly-ywC" secondAttribute="bottom" constant="86" id="MRH-bq-tTw"/>
+                            <constraint firstItem="vx5-7c-yf4" firstAttribute="top" secondItem="eCR-gz-gBk" secondAttribute="bottom" constant="94" id="VNA-dO-Iam"/>
+                            <constraint firstItem="w60-ly-ywC" firstAttribute="top" secondItem="S1O-Pm-zTO" secondAttribute="top" id="aSf-yA-0Zn"/>
+                            <constraint firstItem="vx5-7c-yf4" firstAttribute="leading" secondItem="Ffh-m2-Si0" secondAttribute="leadingMargin" id="pai-35-UYS"/>
+                            <constraint firstItem="vx5-7c-yf4" firstAttribute="leading" secondItem="eCR-gz-gBk" secondAttribute="leading" id="ykz-2G-vhW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xDj-Px-KWa"/>
+                    <connections>
+                        <outlet property="leckerImage" destination="w60-ly-ywC" id="fCT-6q-LAk"/>
+                        <outlet property="leckerName" destination="eCR-gz-gBk" id="Cff-Gs-BtE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ue-su-Msx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1715.2671755725189" y="-14.084507042253522"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rTQ-ZT-qqx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tm9-Cl-3Qn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PMx-Qz-xwF">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wOD-a2-3tq" kind="relationship" relationship="rootViewController" id="31A-vS-gek"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nAx-11-ETi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.717557251908396" y="-14.084507042253522"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

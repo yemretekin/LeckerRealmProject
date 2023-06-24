@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD0946722A3B47C000CFACCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0946712A3B47C000CFACCC /* AppDelegate.swift */; };
+		DD0946742A3B47C000CFACCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0946732A3B47C000CFACCC /* SceneDelegate.swift */; };
+		DD0946792A3B47C000CFACCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0946772A3B47C000CFACCC /* Main.storyboard */; };
+		DD09467B2A3B47C100CFACCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD09467A2A3B47C100CFACCC /* Assets.xcassets */; };
+		DD09467E2A3B47C100CFACCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD09467C2A3B47C100CFACCC /* LaunchScreen.storyboard */; };
+		DD0946872A3B480900CFACCC /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DD0946862A3B480900CFACCC /* Realm */; };
+		DD0946892A3B480900CFACCC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DD0946882A3B480900CFACCC /* RealmSwift */; };
+		DD0E777C2A3C3AA60037272E /* LeckerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0E777B2A3C3AA60037272E /* LeckerCollectionViewController.swift */; };
+		DD0E777E2A3C3C460037272E /* RealFlower.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0E777D2A3C3C460037272E /* RealFlower.swift */; };
+		DD0E77802A3C3DE00037272E /* LeckerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0E777F2A3C3DE00037272E /* LeckerCollectionViewCell.swift */; };
+		DD0E77822A3C53CB0037272E /* AddLeckerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0E77812A3C53CB0037272E /* AddLeckerViewController.swift */; };
+		DD0E77842A3C656D0037272E /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0E77832A3C656D0037272E /* DatabaseHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DD09466E2A3B47C000CFACCC /* LeckerRealmProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeckerRealmProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0946712A3B47C000CFACCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD0946732A3B47C000CFACCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DD0946782A3B47C000CFACCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD09467A2A3B47C100CFACCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD09467D2A3B47C100CFACCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD09467F2A3B47C100CFACCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD0E777B2A3C3AA60037272E /* LeckerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeckerCollectionViewController.swift; sourceTree = "<group>"; };
+		DD0E777D2A3C3C460037272E /* RealFlower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealFlower.swift; sourceTree = "<group>"; };
+		DD0E777F2A3C3DE00037272E /* LeckerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeckerCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD0E77812A3C53CB0037272E /* AddLeckerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLeckerViewController.swift; sourceTree = "<group>"; };
+		DD0E77832A3C656D0037272E /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD09466B2A3B47C000CFACCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0946892A3B480900CFACCC /* RealmSwift in Frameworks */,
+				DD0946872A3B480900CFACCC /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD0946652A3B47C000CFACCC = {
+			isa = PBXGroup;
+			children = (
+				DD0946702A3B47C000CFACCC /* LeckerRealmProject */,
+				DD09466F2A3B47C000CFACCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD09466F2A3B47C000CFACCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD09466E2A3B47C000CFACCC /* LeckerRealmProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD0946702A3B47C000CFACCC /* LeckerRealmProject */ = {
+			isa = PBXGroup;
+			children = (
+				DD0946712A3B47C000CFACCC /* AppDelegate.swift */,
+				DD0946732A3B47C000CFACCC /* SceneDelegate.swift */,
+				DD0946772A3B47C000CFACCC /* Main.storyboard */,
+				DD09467A2A3B47C100CFACCC /* Assets.xcassets */,
+				DD09467C2A3B47C100CFACCC /* LaunchScreen.storyboard */,
+				DD09467F2A3B47C100CFACCC /* Info.plist */,
+				DD0E777B2A3C3AA60037272E /* LeckerCollectionViewController.swift */,
+				DD0E777F2A3C3DE00037272E /* LeckerCollectionViewCell.swift */,
+				DD0E777D2A3C3C460037272E /* RealFlower.swift */,
+				DD0E77812A3C53CB0037272E /* AddLeckerViewController.swift */,
+				DD0E77832A3C656D0037272E /* DatabaseHelper.swift */,
+			);
+			path = LeckerRealmProject;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD09466D2A3B47C000CFACCC /* LeckerRealmProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD0946822A3B47C100CFACCC /* Build configuration list for PBXNativeTarget "LeckerRealmProject" */;
+			buildPhases = (
+				DD09466A2A3B47C000CFACCC /* Sources */,
+				DD09466B2A3B47C000CFACCC /* Frameworks */,
+				DD09466C2A3B47C000CFACCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeckerRealmProject;
+			packageProductDependencies = (
+				DD0946862A3B480900CFACCC /* Realm */,
+				DD0946882A3B480900CFACCC /* RealmSwift */,
+			);
+			productName = LeckerRealmProject;
+			productReference = DD09466E2A3B47C000CFACCC /* LeckerRealmProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD0946662A3B47C000CFACCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DD09466D2A3B47C000CFACCC = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = DD0946692A3B47C000CFACCC /* Build configuration list for PBXProject "LeckerRealmProject" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD0946652A3B47C000CFACCC;
+			packageReferences = (
+				DD0946852A3B480900CFACCC /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = DD09466F2A3B47C000CFACCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD09466D2A3B47C000CFACCC /* LeckerRealmProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD09466C2A3B47C000CFACCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD09467E2A3B47C100CFACCC /* LaunchScreen.storyboard in Resources */,
+				DD09467B2A3B47C100CFACCC /* Assets.xcassets in Resources */,
+				DD0946792A3B47C000CFACCC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD09466A2A3B47C000CFACCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0E777C2A3C3AA60037272E /* LeckerCollectionViewController.swift in Sources */,
+				DD0946722A3B47C000CFACCC /* AppDelegate.swift in Sources */,
+				DD0E77802A3C3DE00037272E /* LeckerCollectionViewCell.swift in Sources */,
+				DD0E77842A3C656D0037272E /* DatabaseHelper.swift in Sources */,
+				DD0946742A3B47C000CFACCC /* SceneDelegate.swift in Sources */,
+				DD0E77822A3C53CB0037272E /* AddLeckerViewController.swift in Sources */,
+				DD0E777E2A3C3C460037272E /* RealFlower.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD0946772A3B47C000CFACCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD0946782A3B47C000CFACCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD09467C2A3B47C100CFACCC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD09467D2A3B47C100CFACCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD0946802A3B47C100CFACCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD0946812A3B47C100CFACCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD0946832A3B47C100CFACCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z63JX3TBD5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LeckerRealmProject/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emrelvs.LeckerRealmProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD0946842A3B47C100CFACCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z63JX3TBD5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LeckerRealmProject/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emrelvs.LeckerRealmProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD0946692A3B47C000CFACCC /* Build configuration list for PBXProject "LeckerRealmProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0946802A3B47C100CFACCC /* Debug */,
+				DD0946812A3B47C100CFACCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD0946822A3B47C100CFACCC /* Build configuration list for PBXNativeTarget "LeckerRealmProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0946832A3B47C100CFACCC /* Debug */,
+				DD0946842A3B47C100CFACCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD0946852A3B480900CFACCC /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD0946862A3B480900CFACCC /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD0946852A3B480900CFACCC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		DD0946882A3B480900CFACCC /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD0946852A3B480900CFACCC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DD0946662A3B47C000CFACCC /* Project object */;
+}
